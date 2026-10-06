@@ -19,21 +19,21 @@ Someone then spends hours copying and pasting everything into one workbook, fixi
 
 **Before:** three of the ten timesheets. Same information, three different layouts.
 
-![Cornerstone Concrete timesheet](sub-report-automation/docs/images/before1.png)
-![Ironbridge Steel timesheet](docs/images/before2.png)
-![Northline Plumbing timesheet](docs/images/before3.png)
+![Cornerstone Concrete timesheet](images/before1.png)
+![Ironbridge Steel timesheet](images/before2.png)
+![Northline Plumbing timesheet](images/before3.png)
 
 **After:** one report, built with one command.
 
-![Report overview](docs/images/after1.png)
+![Report overview](images/after1.png)
 
 Every problem found is logged with the file, the row and what was done about it:
 
-![Exceptions sheet](docs/images/after2.png)
+![Exceptions sheet](images/after2.png)
 
 All the clean data sits in one sheet, and the totals are live formulas:
 
-![Clean data sheet](docs/images/after3.png)
+![Clean data sheet](images/after3.png)
 
 ## What this does
 
@@ -65,8 +65,8 @@ Drop the files in `input/`, run one command, and get:
 Requires Python 3.10 or newer.
 
 ```bash
-git clone https://github.com/AshraySikka/sub-report-automation.git
-cd sub-report-automation
+git clone https://github.com/AshraySikka/Excel-Automation.git
+cd Excel-Automation
 
 python -m venv .venv
 source .venv/bin/activate        # Windows: .venv\Scripts\activate
@@ -80,7 +80,7 @@ Open `output/weekly_project_report_2026-09-28.xlsx` in Excel and read `output/em
 
 To use your own files, skip `generate_samples.py` and put your `.xlsx` timesheets in `input/`.
 
-Want to see the result without running anything? Open [samples/sample_weekly_report.xlsx](samples/sample_weekly_report.xlsx).
+Want to see the result without running anything? Open [samples/sample_weekly_report.xlsx](../samples/sample_weekly_report.xlsx).
 
 ## Project structure
 
