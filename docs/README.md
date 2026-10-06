@@ -15,6 +15,26 @@ Every week, a project coordinator gets timesheets from several subcontractors. E
 
 Someone then spends hours copying and pasting everything into one workbook, fixing it by hand, and hoping nothing slipped through.
 
+## See it in action
+
+**Before:** three of the ten timesheets. Same information, three different layouts.
+
+![Cornerstone Concrete timesheet](docs/images/before1.png)
+![Ironbridge Steel timesheet](docs/images/before2.png)
+![Northline Plumbing timesheet](docs/images/before3.png)
+
+**After:** one report, built with one command.
+
+![Report overview](docs/images/after1.png)
+
+Every problem found is logged with the file, the row and what was done about it:
+
+![Exceptions sheet](docs/images/after2.png)
+
+All the clean data sits in one sheet, and the totals are live formulas:
+
+![Clean data sheet](docs/images/after3.png)
+
 ## What this does
 
 Drop the files in `input/`, run one command, and get:
@@ -60,12 +80,16 @@ Open `output/weekly_project_report_2026-09-28.xlsx` in Excel and read `output/em
 
 To use your own files, skip `generate_samples.py` and put your `.xlsx` timesheets in `input/`.
 
+Want to see the result without running anything? Open [samples/sample_weekly_report.xlsx](samples/sample_weekly_report.xlsx).
+
 ## Project structure
 
 ```
 generate_samples.py   Creates 10 deliberately messy sample timesheets
 process_reports.py    Reads, cleans, validates and builds the report
 requirements.txt      pandas, openpyxl
+docs/images/          Screenshots used in this README
+samples/              A finished sample report
 input/                Timesheets go here (git-ignored)
 output/               Report and email draft land here (git-ignored)
 ```
