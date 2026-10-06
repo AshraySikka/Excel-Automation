@@ -19,7 +19,7 @@ Someone then spends hours copying and pasting everything into one workbook, fixi
 
 **Before:** three of the ten timesheets. Same information, three different layouts.
 
-![Cornerstone Concrete timesheet](docs/images/before1.png)
+![Cornerstone Concrete timesheet](sub-report-automation/docs/images/before1.png)
 ![Ironbridge Steel timesheet](docs/images/before2.png)
 ![Northline Plumbing timesheet](docs/images/before3.png)
 
